@@ -19,11 +19,11 @@ class _HomeAppbarState extends State<HomeAppbar> {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     return Container(
-      color: Colors.amber,
+      color: Colors.black12,
       child: Padding(
         padding: const EdgeInsets.all(15),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Expanded(
               child: Row(
@@ -33,7 +33,7 @@ class _HomeAppbarState extends State<HomeAppbar> {
                     width: screenSize.width / 4,
                   ),
                   const Text(
-                    'Home',
+                    'FUELZO',
                     style: TextStyle(
                       color: Colors.cyan,
                       fontSize: 26,

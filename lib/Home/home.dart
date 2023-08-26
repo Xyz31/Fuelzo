@@ -13,16 +13,16 @@ class MyHome extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     // final isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Colors.grey[250],
       extendBody: true,
       appBar: width < 800
           ? AppBar(
-              backgroundColor: Colors.amber,
+              backgroundColor: Colors.black12,
               iconTheme: const IconThemeData(color: Colors.blue),
               elevation: 0,
               centerTitle: true,
               title: const Text(
-                'Author',
+                'FUELZO',
                 style: TextStyle(
                   color: Colors.blueGrey,
                   fontSize: 26,

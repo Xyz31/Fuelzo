@@ -97,7 +97,7 @@ class _ServiceCardsState extends State<ServiceCards> {
                                   ),
                                   boxShadow: [
                                     BoxShadow(
-                                      offset: Offset(0, 10),
+                                      offset: const Offset(0, 10),
                                       blurRadius: 20,
                                       spreadRadius: 5,
                                       color: Colors.grey.withOpacity(0.3),
@@ -112,7 +112,7 @@ class _ServiceCardsState extends State<ServiceCards> {
                               ),
                               child: Text(
                                 services[index],
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 20,
                                   fontFamily: 'Montserrat',
                                   fontWeight: FontWeight.w500,
@@ -128,76 +128,80 @@ class _ServiceCardsState extends State<ServiceCards> {
               ),
             )
           : SingleChildScrollView(
-              child: GridView.builder(
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3,
-                  crossAxisSpacing: 10.0,
-                  mainAxisSpacing: 10.0,
-                ),
-                itemCount: services.length,
-                itemBuilder: (context, index) {
-                  return InkWell(
-                    onTap: () {
-                      // Add the onTap logic here
-                    },
-                    radius: 40,
-                    borderRadius: BorderRadius.circular(20),
-                    onHover: (value) {
-                      setState(() {
-                        value = isHovering[index];
-                        cardColor = value ? Colors.yellow : Colors.transparent;
-                      });
-                    },
-                    hoverColor: Colors.amber,
-                    focusColor: Colors.transparent,
-                    child: Card(
-                      elevation: 5,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: MediaQuery.of(context).size.width / 4.5,
-                            width: MediaQuery.of(context).size.width / 3,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20.0),
-                                image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage(
-                                    images[index],
+              child: Container(
+                color: Colors.grey[260],
+                child: GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 3,
+                    crossAxisSpacing: 10.0,
+                    mainAxisSpacing: 10.0,
+                  ),
+                  itemCount: services.length,
+                  itemBuilder: (context, index) {
+                    return InkWell(
+                      onTap: () {
+                        // Add the onTap logic here
+                      },
+                      radius: 40,
+                      borderRadius: BorderRadius.circular(20),
+                      onHover: (value) {
+                        setState(() {
+                          value = isHovering[index];
+                          cardColor =
+                              value ? Colors.yellow : Colors.transparent;
+                        });
+                      },
+                      hoverColor: Colors.amber,
+                      focusColor: Colors.transparent,
+                      child: Card(
+                        elevation: 5,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: MediaQuery.of(context).size.width / 4.5,
+                              width: MediaQuery.of(context).size.width / 3,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: AssetImage(
+                                      images[index],
+                                    ),
                                   ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      offset: const Offset(0, 10),
+                                      blurRadius: 30,
+                                      spreadRadius: 17,
+                                      color: Colors.grey.withOpacity(0.3),
+                                    )
+                                  ],
                                 ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    offset: Offset(0, 10),
-                                    blurRadius: 30,
-                                    spreadRadius: 17,
-                                    color: Colors.grey.withOpacity(0.3),
-                                  )
-                                ],
                               ),
                             ),
-                          ),
-                          Align(
-                            alignment: Alignment.bottomCenter,
-                            child: Text(
-                              services[index],
-                              style: TextStyle(
-                                fontSize: 30,
-                                fontFamily: 'Montserrat',
-                                fontWeight: FontWeight.w500,
+                            Align(
+                              alignment: Alignment.bottomCenter,
+                              child: Text(
+                                services[index],
+                                style: const TextStyle(
+                                  fontSize: 30,
+                                  fontFamily: 'Montserrat',
+                                  fontWeight: FontWeight.w500,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                  );
-                },
+                    );
+                  },
+                ),
               ),
             ),
     );
