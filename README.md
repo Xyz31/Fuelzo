@@ -25,3 +25,35 @@ Follow these steps to set up Fuelzo on your local environment:
 
    ```bash
    git clone https://github.com/Xyz31/Fuelzo.git
+
+## Contributing
+Contributions to Fuelzo are highly welcome! If you're interested in contributing, follow these steps:
+
+Fork the repository to your GitHub account.
+
+Clone the forked repository to your local machine:
+
+```bash
+   git clone https://github.com/your-username/Fuelzo.git
+```
+
+
+
+Create a new branch for your feature or bug fix:
+
+```bash
+git checkout -b feature/new-feature
+```
+Implement your changes, commit them, and push to your forked repository.
+
+Create a pull request from your forked repository's branch to the main branch of the main repository.
+
+Please ensure your contributions align with the project's coding standards and adhere to the Flutter style guide.
+
+## License
+This project is licensed under the MIT License.
+
+## Contact
+For any questions, suggestions, or concerns, reach out to us at contact@fuelzoapp.com or open an issue in this repository.
+
+We hope Fuelzo enhances your experience in accessing various real-time services conveniently. Thank you for choosing our app!
