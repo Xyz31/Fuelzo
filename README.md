@@ -1,4 +1,5 @@
-# Fuelzo - Real-Time Service Provider App
+# Fuelzo 
+## ***Real-Time Service Provider App***
 
 Fuelzo is a versatile mobile application built using Flutter that offers real-time service connections to users. It connects users with various service providers, including fuel stations, puncture shops, grocery shops, medical shops, tours and travel agencies, and stationary shops. The app utilizes the Google Maps API for efficient tracking of service provider locations and user routes.
 
