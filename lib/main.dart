@@ -6,15 +6,17 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Firebase.initializeApp(
       options: const FirebaseOptions(
-          apiKey: "AIzaSyBbWzneSRDUVrHGjnQ7ctbFlnhbT-RNdzA",
-          authDomain: "team-project1-28a2b.firebaseapp.com",
-          projectId: "team-project1-28a2b",
-          storageBucket: "team-project1-28a2b.appspot.com",
-          messagingSenderId: "319919531248",
-          appId: "1:319919531248:web:884e580d6b3fb3019d4e35",
-          measurementId: "G-055ZQMRZ7C"));
+          apiKey: "AIzaSyD9_JiubxbkaKlUQM4MoqJNJ5RYKaSf4Xw",
+          authDomain: "fuelzo-38d52.firebaseapp.com",
+          projectId: "fuelzo-38d52",
+          storageBucket: "fuelzo-38d52.appspot.com",
+          messagingSenderId: "811412470818",
+          appId: "1:811412470818:web:4b6bc8bd7e7407b9ca5e7b",
+          measurementId: "G-FN5VY9HMTD"));
   runApp(const MyApp());
 }
+
+// Api Key = "AIzaSyAKVUN5xoFUGY_5OoGlJXceOooXEUXeBCY"
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -24,8 +26,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.from(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow)),
-      home: MyHome(),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent)),
+      home: const MyHome(),
     );
   }
 }

@@ -32,30 +32,33 @@
   <title>team_project1</title>
   <link rel="manifest" href="manifest.json">
 
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkIoq-G28WGsdcBikXsq5HzE48MlIsSic&libraries=drawing,visualization,places">
+  </script>
+
   <script type="module">
     // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
   
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-      apiKey: "AIzaSyBbWzneSRDUVrHGjnQ7ctbFlnhbT-RNdzA",
-      authDomain: "team-project1-28a2b.firebaseapp.com",
-      projectId: "team-project1-28a2b",
-      storageBucket: "team-project1-28a2b.appspot.com",
-      messagingSenderId: "319919531248",
-      appId: "1:319919531248:web:884e580d6b3fb3019d4e35",
-      measurementId: "G-055ZQMRZ7C"
+      apiKey: "AIzaSyD9_JiubxbkaKlUQM4MoqJNJ5RYKaSf4Xw",
+      authDomain: "fuelzo-38d52.firebaseapp.com",
+      projectId: "fuelzo-38d52",
+      storageBucket: "fuelzo-38d52.appspot.com",
+      messagingSenderId: "811412470818",
+      appId: "1:811412470818:web:4b6bc8bd7e7407b9ca5e7b",
+      measurementId: "G-FN5VY9HMTD"
     };
   
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
   </script>
-
   <script>
     // The value below is injected by flutter build, do not touch.
     var serviceWorkerVersion = null;

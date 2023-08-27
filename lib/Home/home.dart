@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:team_project1/widgets/drawer_menu.dart';
+import 'package:team_project1/widgets/googlemaps.dart';
 import 'package:team_project1/widgets/home_appbar.dart';
 import 'package:team_project1/widgets/service_cards.dart';
 
@@ -30,9 +31,18 @@ class MyHome extends StatelessWidget {
                   letterSpacing: 3,
                 ),
               ))
-          : PreferredSize(preferredSize: Size(width, 70), child: HomeAppbar()),
-      drawer: DrawerMenu(),
-      body: ServiceCards(),
+          : PreferredSize(
+              preferredSize: Size(width, 70), child: const HomeAppbar()),
+      drawer: const DrawerMenu(),
+      // ignore: prefer_const_constructors
+      body: SingleChildScrollView(
+        child: const Column(
+          children: [
+            CustomGoogleMap(),
+            ServiceCards(),
+          ],
+        ),
+      ),
     );
   }
 }
