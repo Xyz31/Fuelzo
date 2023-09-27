@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:team_project1/widgets/drawer_menu.dart';
-import 'package:team_project1/widgets/googlemaps.dart';
-import 'package:team_project1/widgets/home_appbar.dart';
-import 'package:team_project1/widgets/service_cards.dart';
+import 'package:team_project1/presentation/widgets/drawer_menu.dart';
+import 'package:team_project1/presentation/maps/googlemaps.dart';
+import 'package:team_project1/presentation/widgets/home_appbar.dart';
+import 'package:team_project1/presentation/widgets/service_cards.dart';
 
 class MyHome extends StatelessWidget {
   const MyHome({super.key});
@@ -13,10 +13,13 @@ class MyHome extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     // final isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
     return Scaffold(
+      extendBodyBehindAppBar: true,
+
       backgroundColor: Colors.grey[250],
       extendBody: true,
       appBar: width < 800
           ? AppBar(
+              toolbarOpacity: 1.0,
               backgroundColor: Colors.black12,
               iconTheme: const IconThemeData(color: Colors.blue),
               elevation: 0,
@@ -37,6 +40,9 @@ class MyHome extends StatelessWidget {
       body: SingleChildScrollView(
         child: const Column(
           children: [
+            SizedBox(
+              height: 40,
+            ),
             CustomGoogleMap(),
             ServiceCards(),
           ],

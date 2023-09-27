@@ -70,7 +70,7 @@ class _ServiceCardsState extends State<ServiceCards> {
                         setState(() {
                           value = isHovering[index];
                           cardColor =
-                              value ? Colors.yellow : Colors.transparent;
+                              value ? Colors.deepOrange : Colors.transparent;
                         });
                       },
                       hoverColor: Colors.amber,
@@ -98,7 +98,7 @@ class _ServiceCardsState extends State<ServiceCards> {
                                   boxShadow: [
                                     BoxShadow(
                                       offset: const Offset(0, 10),
-                                      blurRadius: 20,
+                                      blurRadius: 30,
                                       spreadRadius: 5,
                                       color: Colors.grey.withOpacity(0.3),
                                     )
@@ -177,7 +177,7 @@ class _ServiceCardsState extends State<ServiceCards> {
                                   boxShadow: [
                                     BoxShadow(
                                       offset: const Offset(0, 10),
-                                      blurRadius: 30,
+                                      blurRadius: 20,
                                       spreadRadius: 17,
                                       color: Colors.grey.withOpacity(0.3),
                                     )
@@ -190,7 +190,7 @@ class _ServiceCardsState extends State<ServiceCards> {
                               child: Text(
                                 services[index],
                                 style: const TextStyle(
-                                  fontSize: 30,
+                                  fontSize: 20,
                                   fontFamily: 'Montserrat',
                                   fontWeight: FontWeight.w500,
                                 ),

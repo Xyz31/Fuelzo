@@ -69,7 +69,7 @@ class DrawerMenu extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Copyright © 2023 | Fueloz',
+                    'Copyright © 2023 | Fuelzo',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 14,

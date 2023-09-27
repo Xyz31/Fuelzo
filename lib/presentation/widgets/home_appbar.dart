@@ -53,7 +53,7 @@ class _HomeAppbarState extends State<HomeAppbar> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Profile',
+                      'Sign up',
                       style: TextStyle(
                           color: _isHovering[0] ? Colors.cyan : Colors.blue,
                           fontWeight: FontWeight.bold,
@@ -86,7 +86,7 @@ class _HomeAppbarState extends State<HomeAppbar> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Log out',
+                      'Sign in',
                       style: TextStyle(
                           color: _isHovering[1] ? Colors.cyan : Colors.blue,
                           fontWeight: FontWeight.bold,
@@ -119,7 +119,7 @@ class _HomeAppbarState extends State<HomeAppbar> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Log In',
+                      'Profile',
                       style: TextStyle(
                           color: _isHovering[2] ? Colors.cyan : Colors.blue,
                           fontWeight: FontWeight.bold,
@@ -152,7 +152,7 @@ class _HomeAppbarState extends State<HomeAppbar> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Sign Up',
+                      'Log out',
                       style: TextStyle(
                           color: _isHovering[3] ? Colors.cyan : Colors.blue,
                           fontWeight: FontWeight.bold,
